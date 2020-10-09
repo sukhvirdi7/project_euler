@@ -4,10 +4,13 @@ var b = 2
 var temp 
 
 while (b < 4e6){
+
     if(b %  2 == 0){
-        sum+= a
-        a = temp
+        sum+= b
     }
+    temp = b
+    b += a
+    a = temp
 }
 
 console.log(sum)
